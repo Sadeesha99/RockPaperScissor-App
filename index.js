@@ -32,7 +32,7 @@ function playBtnFunction(){
     console.log("Random Number :"+randomNumber)
     console.log("Same Counter :"+countSame)
     if (countSame>=3){
-        mainFun()
+        playBtnFunction()
     }
     setToLastRan()
     
@@ -59,7 +59,7 @@ function resetClickSound(){
 window.addEventListener('load',()=>{
     audioEL.play();
     audioEL.volume = 0.5;
-    audioEL.autolay = true;
+    audioEL.autoplay = true;
     audioEL.loop = true;
 
 })
