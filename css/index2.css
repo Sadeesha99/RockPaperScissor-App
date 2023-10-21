@@ -1,0 +1,154 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
+    background-image: url(../images/rock-paper-scissors.jpg);
+    justify-content: center;
+    background-size: cover;
+    font-size: larger;
+}
+h2 {
+    color: rgb(226, 143, 40);
+    text-decoration: underline;
+    font-size: xx-large;
+    text-align: center;
+}
+#round-el{
+    justify-content: center;
+    color: aliceblue;
+    font-size: larger;
+    text-align: center;
+    margin: auto;
+
+}
+
+/* Main div Containers Start */
+.mainDiv{
+    width: 100%;
+    height: 100%;
+
+}
+.container1, .container2 {
+
+    background-color: rgba(34, 33, 33, 0.836);
+    min-height: 90%;
+    min-width: 45%;
+    margin: auto;
+    border: 3px solid black;
+    border-radius: 10px;
+   
+}
+/* Main div Containers End */
+
+
+/* Result Start */
+.resultArea1 , .resultArea2 {
+    margin: auto;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    /* justify-content: center;  removed*/
+    display: flex; /*Changed*/
+    
+    
+}
+#result-el1 ,#result-el2{
+    justify-content: right;
+    color: aliceblue;
+    font-size: x-large;
+}
+/* Result End */
+
+
+/* Buttons Start */
+.playButtonArea {
+    margin-right: 5%;
+    text-align: center;
+}
+button {
+    border: 0px;
+    padding: 10px;
+    border-radius: 3px;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 9px #e4dddd;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    margin: 5px;
+}
+
+#paperBtn:hover,#rockBtn:hover, #scissorBtn:hover {
+   background-color: #5b0ba5ea
+}
+#restartBtn:hover {
+   background-color: #5b0ba5ea
+}
+
+#paperBtn,#rockBtn, #scissorBtn {
+    background-color: rgb(25, 145, 45);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
+    font-size: larger;
+    top: 50%;
+    left: 40%;
+    height: 80%;
+    width: 120%;
+    margin-bottom: 10%;
+    font-weight: 600;
+}
+
+#restartBtn{
+    background-color: rgb(145, 43, 25);
+    margin-bottom: 50%;
+    width: 450%;
+    font-weight: 600;
+    font-size: larger;
+    justify-content: end;
+}
+
+button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #ada9a9;
+    transform: translateY(4px);
+}
+/* Buttons End */
+
+/* Images Start */
+.imageArea1 , .imageArea2{
+    margin: auto;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    /* justify-content: center;  removed*/
+    display: flex; /*Changed*/
+}
+#image-El1{
+    padding-left: 10%;
+} 
+.imageArea2, #result-el2{
+    padding-left: 5%;
+}
+#image-El2,.imageArea2, #result-el2 {
+    padding-right: 5%;
+}
+
+img{
+    max-height: 300%;
+}
+.soundbutton-image{
+    height: 25px;
+    width:25px;
+}
+#soundbutton-El{
+    padding: 0.5%;
+    width: 5%;
+    margin:0px;
+}
+/* Images End */
+
+@media (min-height: 840px){
+    body{
+        background-color: rgb(90, 87, 87);
+        /* background-size: none; */
+    }
+}

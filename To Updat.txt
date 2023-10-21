@@ -1,0 +1,8 @@
+1) take the name in the first page and ask for the number of rounds.
+2) then make it display in second page
+3) create a big play button in the middle..
+4) after clicking the play button a player can have upto 2-3 seconds
+to select a choice between rock paper and scissor
+5) it will be compared with computer and marks will be added to respective player
+6) try to map urls
+7) 

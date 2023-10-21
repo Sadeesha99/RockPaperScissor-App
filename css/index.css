@@ -1,0 +1,109 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
+    background-image: url(../images/rock-paper-scissors.jpg);
+    justify-content: center;
+    background-size: cover;
+    font-size: larger;
+}
+h2 {
+    color: rgb(226, 143, 40);
+    text-decoration: underline;
+    font-size: xx-large;
+}
+/* Main div Containers Start */
+.mainDiv{
+    width: 100%;
+    height: 100%;
+
+}
+.container1, .container2 {
+
+    background-color: rgba(34, 33, 33, 0.836);
+    min-height: 90%;
+    min-width: 45%;
+    margin: auto;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+/* Main div Containers End */
+
+
+/* Result Start */
+.resultArea {
+    margin: auto;
+    margin-top: 5%;
+    height: auto;
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+    
+    
+}
+#result-el {
+    color: aliceblue;
+    font-size: x-large;
+}
+/* Result End */
+
+/* Buttons Start */
+.buttonArea {
+    margin: auto;
+    margin-top: 0;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+button {
+    border: 0px;
+    padding: 10px;
+    border-radius: 3px;
+    color: aliceblue;
+    box-shadow: 0 9px #e4dddd;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+}
+
+#playBtn:hover,#resetBtn:hover {
+   background-color: #5b0ba5ea
+}
+
+#playBtn {
+    background-color: rgb(25, 145, 45);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
+    font-size: larger;
+    top: 50%;
+    left: 40%;
+    height: 10%;
+    width: 30%;
+    margin-bottom: 10%;
+    font-weight: 600;
+}
+
+#resetBtn{
+    background-color: rgb(145, 43, 25);
+    margin-bottom: 8%;
+}
+
+button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #ada9a9;
+    transform: translateY(4px);
+}
+/* Buttons End */
+
+/* Images Start */
+.imageArea{
+   text-align: center;
+}
+img{
+    max-height: 300%;
+}
+/* Images End */
+
+@media (min-height: 840px){
+    body{
+        background-color: rgb(90, 87, 87);
+        /* background-size: none; */
+    }
+}

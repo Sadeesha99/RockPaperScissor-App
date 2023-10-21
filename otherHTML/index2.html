@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/index2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Game</title>
+</head>
+
+<body>
+    <audio id="bgMusic">
+        <source src="/audio/bgmusic.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="mainDiv-El" class="mainDiv">
+        <div class="container1">
+            <div class="soundBtn" style="display: flex;  justify-content: end;">
+                <button id="soundbutton-El">
+                    <img class="soundbutton-image" src="../images/soundon.png" alt="Sound On">
+                </button>
+            </div>
+            <div class="headDiv" style="display: flex; flex-direction: column; justify-content: space-between;">
+                <h2>Rock Paper Scissor</h2>
+            </div>
+            
+            <!-- <div class="headDiv" style="display: flex; ;">
+                <div class="heading" style="display: flex;  justify-content: end;">
+                    <h2>Rock Paper Scissor</h2>
+                </div>
+                <div class="soundBtn" style="display: flex;  justify-content: end;">
+                    <button class="image-button">
+                        <img class="soundbutton-image" src="../images/soundon.png" alt="Image Description">
+                    </button>
+                </div>
+            </div> -->
+            
+            <p id="round-el"></p>
+            <div class="resultTextArea" style="display: flex;">
+                <div class="resultArea1" style="display: flex; justify-content: start;">
+                    <p id="result-el1">Computer Input</p>
+                </div>
+                <div class="resultArea2" style="display: flex;  justify-content: end;">
+                    <p id="result-el2">Player Input</p>
+                </div>
+            </div>
+            <div class="imageResultArea" style="display: flex;">
+                <div id="imageArea1" class="imageArea1" style="display: flex; justify-content: start;">
+                    <img id="image-El1" src="../images/down-arrow.png">
+                </div>
+                <div id="imageArea2" class="imageArea2" style="display: flex;  justify-content: end;">
+                    <img id="image-El2" src="../images/down-arrow.png">
+                </div>
+            </div>
+
+            <div class="playButtonArea" style="display: flex; justify-content: end;">
+                <div class="rockButtonArea" style="display: flex;  justify-content: end;">
+                    <button id="rockBtn"   >Rock</button>
+                    <button id="paperBtn" >Paper</button>
+                    <button id="scissorBtn">Scissor</button>
+                </div>
+            </div>
+            <div class="playButtonArea" style="display: flex; justify-content: end;">
+                <div class="rockButtonArea" style="display: flex;  justify-content: end;">
+                    <button id="restartBtn" onclick="resetGame()">Back</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="jsDiv">
+        <script src="../script/index2.js"></script>
+        <script src="../script/winnerAndLoser.js"></script>
+        <script src="../script/computerPlayFun.js"></script>
+        <script src="../script/displayGameStats.js"></script>
+        <script src="../script/ClickSound.js"></script>
+
+    </div>
+</body>
+
+</html>
